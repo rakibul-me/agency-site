@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="322.06" height="327.41" viewBox="0 0 322.06 327.41">
+  <defs>
+    <filter id="Path_761" x="0" y="0" width="322.06" height="327.41" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.09"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_637" data-name="Group 637" transform="translate(-1436 -1554.507)">
+    <g id="Group_636" data-name="Group 636" transform="translate(1662.31 1869.917) rotate(-159)">
+      <g id="Group_504" data-name="Group 504" transform="translate(0 0)">
+        <g transform="matrix(-0.93, 0.36, -0.36, -0.93, 324.31, 213.36)" filter="url(#Path_761)">
+          <path id="Path_761-2" data-name="Path 761" d="M202.433,18.407c18.884,12.122,27.473,40.265,29.727,67.433s-1.767,53.362-11.513,81.87-25.158,59.393-49.4,69.931c-24.305,10.6-57.443.853-82.358-15.229-24.853-16.082-41.544-38.56-57.138-62.925S1.6,108.805.133,79.2C-1.39,49.6,10.184,16.641,33.149,5.249,56.175-6.142,90.593,4.092,122.451,7.2S183.549,6.285,202.433,18.407Z" transform="translate(226.31 315.41) rotate(-159)" fill="#47aee1"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_624" data-name="Group 624" transform="translate(1533.264 1605.784)">
+      <rect id="Rectangle_130" data-name="Rectangle 130" width="111.913" height="199.415" transform="translate(0 0)" fill="rgba(255,255,255,0.81)"/>
+      <rect id="Rectangle_131" data-name="Rectangle 131" width="89.605" height="34.696" transform="translate(11.154 87.311)" fill="#fff"/>
+      <line id="Line_19" data-name="Line 19" x2="40.955" transform="translate(47.637 97.311)" fill="none"/>
+      <line id="Line_20" data-name="Line 20" x2="16.639" transform="translate(47.637 108.05)" fill="none"/>
+      <circle id="Ellipse_28" data-name="Ellipse 28" cx="9.463" cy="9.463" r="9.463" transform="translate(19.539 95.196)" fill="#47e1ae"/>
+      <rect id="Rectangle_132" data-name="Rectangle 132" width="89.605" height="34.696" transform="translate(11.154 36.374)" fill="#fff"/>
+      <rect id="Rectangle_133" data-name="Rectangle 133" width="111.913" height="20.537" transform="translate(0 0)" fill="#47e1ae"/>
+      <rect id="Rectangle_134" data-name="Rectangle 134" width="111.913" height="20.537" transform="translate(0 178.878)" fill="#47e1ae"/>
+      <line id="Line_21" data-name="Line 21" x2="16.639" transform="translate(47.637 10.269)" fill="none"/>
+      <circle id="Ellipse_29" data-name="Ellipse 29" cx="4.932" cy="4.932" r="4.932" transform="translate(51.024 184.215)" fill="#fff"/>
+      <line id="Line_22" data-name="Line 22" x2="7.758" transform="translate(80.834 46.373)" fill="none"/>
+      <line id="Line_23" data-name="Line 23" x2="25.439" transform="translate(47.637 46.373)" fill="none"/>
+      <line id="Line_24" data-name="Line 24" x2="16.639" transform="translate(47.637 57.112)" fill="none"/>
+      <circle id="Ellipse_30" data-name="Ellipse 30" cx="9.463" cy="9.463" r="9.463" transform="translate(19.539 44.258)" fill="#47aee1"/>
+    </g>
+  </g>
+</svg>

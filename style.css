@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/*======================================================
+Preventing Defaults
+======================================================*/
+body {
+    margin: 0;
+    font-family: 'Raleway';
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder { /* Edge */
+    font-family: 'Raleway';
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Raleway';
+}
+  
+::placeholder {
+    font-family: 'Raleway';
+}
+
+
+/*======================================================
+Common style
+======================================================*/
+.main-container {
+    max-width: 1920px;
+    margin: auto;
+}
+.container {
+    padding: 0 5%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.centeredText {
+    text-align: center;
+}
+p {
+    color: #262222;
+}
+
+
+/*======================================================
+Header Area style
+======================================================*/
+.main-container header {
+    padding: 1.5em 0;
+    z-index: 1;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li {
+    display: inline-block;
+    display: block;
+}
+header ul li a {
+    color: #495254;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 1em;
+    display: block;
+    font-weight: 600;
+}
+header ul li:first-child {
+    flex-grow: 1;
+}
+header ul li:last-of-type a {
+    background-color: #47AEE1;
+    color: #fff;
+    border-radius: 500px;
+    padding: 0.7em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li:last-of-type a svg {
+    margin-right: 0.5em;
+}
+.trigger {
+    display: none;
+    width: 55px;
+}
+.main-container header .show_hide_menu {/*triggered by javascript*/
+    left: 0;
+}
+
+
+/*mobile-mode*/
+@media screen and (max-width: 768px){
+    header ul li + li {
+        display: none;
+    }
+    .trigger {
+        display: block;
+    }
+}
+
+
+/*Mobile header*/
+.mobile-menu {
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    background-color: #fff;
+    transition: left 0.25s ease-in-out;
+    z-index: 10;
+}
+.mobile-menu ul {
+    display: block;
+}
+.mobile-menu ul > svg {
+    position: absolute;
+    top: 2.5em;
+    right: 8%;
+}
+.mobile-menu ul li {
+    display: block;
+    margin: 0 1.5em;
+}
+.mobile-menu ul li a {
+    width: 100%;
+    padding: 1em 0;
+    display: block;
+    text-align: center;
+}
+.mobile-menu ul li:last-child a {
+    border-radius: 5px;
+}
+
+
+
+/*======================================================
+Hero Area style
+======================================================*/
+section.hero {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+.hero .text {
+    flex: 50%;
+}
+.hero .text h1 {
+    font-size: 3.5em;
+}
+.hero .text h1 span {
+    color: #47AEE1;
+}
+.hero .text a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.75em 2em;
+    background-color: #47AEE1;
+    border-radius: 500px;
+    margin-top: 1em;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    .hero .text {
+        text-align: center;
+    }
+}
+.hero .illustrate {
+    flex: 50%;
+    text-align: center;
+}
+.hero .illustrate img {
+    width: 80%;
+}
+
+
+/*======================================================
+Services Area style
+======================================================*/
+.services {
+    background: #fff url('assets/servicesBackground.svg') no-repeat center top;
+    background-size: cover;
+}
+.services h1, p, h3 {
+    text-align: center;
+}
+.services > h1 {
+    font-size: 2em;
+}
+.services > p {
+    max-width: 500px;
+    margin: auto;
+}
+.services .card-container {
+    padding: 2.5em 1em;
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.services .card-container .card {
+    width: 250px;
+    height: 450px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 1em;
+}
+.services .card-container .card > img {
+    width: 90%;
+    margin: auto;
+}
+.services .card-container .card > * {
+    display: block;
+}
+
+
+/*======================================================
+About Us Area style
+======================================================*/
+.about {
+    padding-bottom: 2.5em;
+}
+.about > h1 {
+    margin-top: 3em;
+    text-align: center;
+}
+.about > p {
+    max-width: 500px; 
+    margin: auto;
+    margin-bottom: 2em;
+}
+.about .box-contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about .box-contain .image {
+    flex: 45%;
+    text-align: center;
+}
+.about .box-contain .image img {
+    width: 50%;
+}
+.about .box-contain .text {
+    flex: 55%;
+}
+.about .box-contain .text #more_text {
+    display: none;
+}
+.about .box-contain .text #more_button {
+    color: #47AEE1;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.about .box-contain .text #more_button:focus {
+    outline: none;
+}
+.about .box-contain .text h3, .about .box-contain .text p {
+    text-align: left;
+}
+.about .box-contain .text p[onclick] {
+    color: #47AEE1;
+}
+
+@media screen and (max-width: 768px){
+    .about .box-contain {
+        display: block;
+    }
+    .about .box-contain .text, .about .box-contain .text p, .about .box-contain .text h3 {
+        text-align: center;
+    }
+}
+
+
+/*======================================================
+Portfolio Area style
+======================================================*/
+.portfolio {
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    background: url('assets/portfoliobg.png') no-repeat center top;
+    background-size: cover;
+    text-align: center;
+}
+.portfolio  h1 {
+    color: #fff;
+}
+.portfolio > section > p {
+    max-width: 500px;
+    margin: auto;
+}
+.portfolio ul {
+    display: inline-block;
+    margin: 2em auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+.portfolio ul li button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0.5em 0.8em;
+    transition: color 0.2s;
+}
+.portfolio ul li button:hover {
+    color: #ffffff;
+}
+.portfolio ul li button.active {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+.portfolio ul li button:focus {
+    outline: none;
+}
+.portfolio .works-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.portfolio .works-container .all {
+    position: relative;
+    display: flex;
+    margin: 1em 2em;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.portfolio .works-container .all p {
+    color: #000;
+    font-size: 1.2em;
+}
+.portfolio .works-container .all img {
+    width: 300px;
+    border-radius: 40px;
+    margin-bottom: 0.5em;
+}
+.portfolio .show-more {
+    background-color: #47AEE1;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 500px;
+    color: white;
+    font-size: 1.15em;
+    margin: 2em auto;
+    cursor: pointer;
+}
+.portfolio .show-more:focus {
+    outline: none;
+}
+
+
+
+/*======================================================
+Our Team Area style
+======================================================*/
+.team {
+    background: url('assets/teambg.png') no-repeat center top;
+    background-size: cover;
+}
+.team h1 {
+    text-align: center;
+}
+.team > p {
+    margin-bottom: 5em;
+}
+.team .slider-area {
+    padding-top: 2em;
+    position: relative;
+    overflow: hidden;
+}
+.team .slider-area .allcard {
+    position: relative;
+    left: 0;
+    transition: left 0.25s ease-in-out;
+}
+.team .slider-area .cards {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 40px; 
+    transform: scale(1,1);
+    transition: transform 0.25s linear;
+}
+.team .slider-area .cards img {
+    width: 70%;
+    border-radius: 50%;
+}
+.team .slider-area .cards ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.team .slider-area .cards ul li a {
+    padding: 0.5em;
+}
+.team .slider-area .cards ul li a:hover svg {
+    fill: #4c00ff;
+}
+.team .slider-area .controls {
+    padding: 2.5em 0 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team .slider-area .controls div svg {
+    margin: 0.5em 0.8em;
+}
+.team .slider-area .controls div:hover svg path {
+    fill:#ae00ff;
+}
+
+
+/*======================================================
+Subscribe Area style
+======================================================*/
+.subscribe {
+    padding: 4em 0;
+}
+.subscribe > h1 {
+    text-align: center;
+}
+.subscribe > p {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.subscribe {
+    padding: 4em 0;
+    text-align: center;
+}
+.subscribe input, .subscribe button {
+    padding: 0.7em 0.9em;
+    font-size: 1.1em;
+    border: none;
+    margin: 0;
+}
+.subscribe input:focus {
+    outline: none;
+}
+.subscribe input[type='text'] {
+    border-radius: 20px;
+    width: 250px;
+    width: 0;
+    border: 1px solid #707070;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    left: 20px;
+}
+.subscribe input[type='text']:focus {
+    background-color: #eee;
+}
+.subscribe button {
+    background-color: #47AEE1;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.76em 1.3em;
+    position: relative;
+    left: -20px;
+}
+.subscribe button:hover {
+    background-color: #1e9fdf;
+}
+.subscribe button:focus {
+    outline: none;
+}
+
+/*======================================================
+Contact Area style
+======================================================*/
+.contact {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.contact .box {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.contact .box .text h1 {
+    text-align: center;
+}
+.contact .box .text ul li {
+    display: inline-block;
+}
+.contact .box .text ul li a {
+    padding: 0.5em;
+    display: block;
+}
+.contact .box .text ul li a:hover svg {
+    fill: #4c00ff;
+}
+.contact .box .text {
+    flex: 40%;
+}
+.contact .box .field {
+    flex: 50%;
+}
+.contact .box p, .contact .box h3 {
+    text-align: left;
+}
+.contact .box .text > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.contact .box .text > div img {
+    width: 25px;
+    margin-right: 1em;
+}
+.contact .box .field {
+    background: url('assets/contactBg1.svg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+.contact .box .field form > * {
+    display: block;
+    margin: auto;
+}
+.contact .box .field form input:not(:last-child), .contact .box .field form textarea {
+    border-radius: 20px;
+    width: 75%;
+    padding: 0.7em;
+    margin: 0.7em auto;
+    font-size: 16px;
+    font-family: "Raleway";
+    border: 2px solid rgba(0, 0, 0, 0.151);
+}
+.contact .box .field form h3 {
+    width: 75%;
+    margin: auto;
+    padding: 1em 0;
+}
+.contact .box .field form > *:focus {
+    outline: none;
+}
+.contact .box .field form div:last-child input{
+    background-color: #47E1AE;
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 0.8em;
+}
+.contact .box .field form .submit {
+    width: 75%;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+@media screen and (max-width: 768px){
+    .contact .box .field, .contact .box .text {
+        flex: 100%;
+    }
+}
+
+
+/*======================================================
+Footer Area style
+======================================================*/
+
+.footer {
+    background-color: #495254;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+footer {
+    display: flex;
+    flex-flow: row wrap;
+}
+footer .item1 {
+    flex: 30%;
+}
+footer .item1 img {
+    width: 150px;
+}
+footer .item1 ul {
+    margin: 1.5em 0;
+}
+footer .item1 ul li {
+    display: inline-block;
+}
+footer .item1 ul li a {
+    display: block;
+    padding: 0.4em;
+}
+footer .item1 ul li a:hover svg {
+    fill: #4c00ff;
+}
+footer .item2 {
+    flex: 30%;
+}
+footer .item2 p, h4 {
+    color: #fff;
+    text-align: left;
+    margin: 0.35em 0;
+}
+footer .item3 {
+    flex-grow: 1;
+}
+footer .item3 p {
+    color: #fff;
+    text-align: left;
+}
+footer .item3 input[type='text'] {
+    padding: 0.8em;
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 70%;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+footer .item3 input[type='text']:focus {
+    outline: none;
+    background-color: #dedede;
+}
+footer .item3 button {
+    background-color: #47AEE1;
+    border-radius: 10px;
+    border: none;
+    padding: 0.9em 2em;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+}
+footer .item3 button:focus {
+    outline: none;
+}
+footer .item3 ul {
+    padding: 1em 0;
+}
+footer .item3 ul li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+footer .item3 ul li a {
+    display: block;
+    padding: 0.5em;
+    color: #fff;
+    text-decoration: none;
+}
+.footer > p {
+    color: #fff;
+}
